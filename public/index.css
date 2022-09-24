@@ -1,0 +1,283 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f3f3;
+
+  color: rgb(55,53,47);
+  transition: .3s;
+}
+
+*.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+  /*
+    Introduced in IE 10.
+    See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+  */
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+ul {
+  list-style: none;
+  margin-top: 18px;
+}
+
+ul li::before {
+  content: "\25A0";
+  color: grey;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -2.3rem;
+}
+
+
+a { 
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img { 
+  max-width: 100%;
+}
+
+.icon-styles {
+  margin-right: 0.5rem;
+}
+
+.link-styles {
+  color: #9b9a97;
+  border-bottom: rgba(211,211,211, 1) 1px solid;
+}
+
+.link-styles:hover {
+  color: black;
+  border-bottom: black 1px solid;
+  transition: 0.5s;
+}
+
+.link-bg {
+  padding: 0.3rem;
+}
+
+.link-bg:hover {
+  background-color: rgba(155,154,151,.3);
+  transition: 0.3s;
+}
+
+
+
+/* Top Section */
+
+.top {
+  position: fixed;
+  width: 100vw;
+  height: 40px;
+  top: 0px;
+  background-color: #f3f3f3;
+  z-index: 1000;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.header-photo {
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+}
+
+.header-text {
+  margin-left: 0.5rem;
+  font-size: 0.95rem;
+}
+
+
+/* Card Section */ 
+
+.card {
+  background-color: #ffffff;
+  border-radius: 0px 30px 30px 0px;
+  padding: 0 2rem 0 2em;
+  margin: 24rem 0 10rem 0;
+}
+
+.card-photo {
+  position: absolute;
+  width: 130px;
+  top: 200px
+}
+
+.card-title {
+
+  font-size: 2.7rem;
+  position: absolute;
+  top: 320px;
+}
+
+.card-intro {
+  margin-top: 3rem
+}
+
+.card-list {
+  padding-top: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.card-list-item {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.card-list-item:first-of-type {
+  margin-bottom: 0.8rem;
+}
+
+.card-list-item:last-of-type {
+  margin-top: 0.8rem;
+}
+
+.card-bio {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.card-links {
+  border-top: 2px solid rgba(211,211,211,0.3);
+  border-bottom: 2px solid rgba(211,211,211,0.3);
+
+  font-size: 1.1rem;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 2.5rem 0rem 2.5rem;
+}
+
+.card-links p {
+  text-decoration: underline;
+  text-decoration-color: rgb(211,211,211);
+  text-underline-offset: 7px;
+}
+
+.card-links-top, .card-links-bottom {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-projects {
+  border-bottom: 2px solid rgba(211,211,211,0.3);
+  padding-bottom: 1.5rem;
+}
+
+.card-projects h2 {
+  margin-bottom: 2rem;
+}
+
+.card-projects p:last-of-type {
+  margin-bottom: 2rem;
+}
+
+/* Footer*/
+
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.card-footer p {
+  font-style: italic;
+  font-weight: bold;
+  margin: 0.3rem;
+  color: #9b9a97;
+}
+
+.card-footer p:last-child { 
+  color: black;
+}
+
+/* Media Queries */
+
+
+@media (min-width: 640px) {
+
+  .card-content { 
+    padding: 0px 70px 0px 70px;
+  }
+
+  .card-intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .card-list {
+    width: 40%;
+    height: 100%;
+    padding-top: 20px;
+  }
+
+  .card-bio {
+    width: 60%;
+    height: 100%;
+    padding-top: 20px;
+  }
+
+  .card-links {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .card-links-top, .card-links-bottom {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-links a {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+}
+
+@media (min-width: 800px) {
+
+  .card-title {
+    margin-left: 80px;
+  }
+
+  .card-photo {
+    margin-left: 80px
+  }
+
+}
+
+@media (min-width: 900px) {
+  
+  .card {
+    width: 900px;
+    border-radius: 30px 30px 30px 30px;
+  }
+
+  .card-container { 
+    display: flex;
+    justify-content: center;
+  }
+  
+}

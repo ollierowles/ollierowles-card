@@ -30,7 +30,7 @@ export default function Card() {
                     </div>
 
                     <div className='card-bio'>
-                            <p>Currently in my fourth year studying Mechatronics and Robotics at the University of Birmingham and looking for a graduate role in Software Engineering. <br/><br/> If you have any opportunities available, feel free to contact me <a className='link-styles'>here</a>.</p>
+                            <p>Currently in my fourth year studying Mechatronics and Robotics at the University of Birmingham and looking for a graduate role in Software Engineering. <br/><br/> If you have any opportunities available, feel free to contact me <a className='link-styles' href='mailto: ollierowles@outlook.com' target='_blank'>here</a>.</p>
                     </div>  
 
 
@@ -45,22 +45,22 @@ export default function Card() {
                     <div className='card-links-bottom'>
                         <a href='' target='_blank'><p className='link-bg'><FontAwesomeIcon icon={faFile} className='icon-styles'/>CV</p></a>
                         <a href='#projects-anchor'><p className='link-bg'><FontAwesomeIcon icon={faBarsProgress} className='icon-styles'/>Projects</p></a>
-                        <a href='' target='_blank'><p className='link-bg'><FontAwesomeIcon icon={faEnvelope} className='icon-styles'/>Contact</p></a>
+                        <a href='mailto: ollierowles@outlook.com' target='_blank'><p className='link-bg'><FontAwesomeIcon icon={faEnvelope} className='icon-styles'/>Contact</p></a>
                     </div>
                 </div>
 
                 <div className='card-projects' id='projects-anchor' >
-                    <h2>Projects</h2>
-                    <h3>AlbumWatch</h3>
-                    <li> Full-stack web application allowing the search of albums and lyrics through Spotifys API</li>
+                    <h1>Projects</h1>
+                    <h2>AlbumWatch</h2>
+                    <li> Full-stack web application allowing the search of albums and lyrics through Spotify's API</li>
                     <li> Dynamically changing content based on user search through React hooks and state</li>
                     <li> User authentication control through hooks and Axios backend</li>
                     <li> Technologies used: React, JavaScript, HTML/CSS, Axios, Spotify Web API, LyricsFinder API</li>
-                    <h3>Student Module Choice GUI</h3>
+                    <h2>Student Module Choice GUI</h2>
                     <li> Application to capture students details and module choices</li>
                     <li> GUI allows the user to see the stored details/choices and make modifications</li>
                     <li> Technologies used: Java, JavaFX, CSS</li>
-                    <h3>Music Client-Server Application</h3>
+                    <h2>Music Client-Server Application</h2>
                     <li> Multi Client-Server application using TCP protocotol, where users can request information from a music database</li>
                     <li> Request forms an SQL query using a prepared statement to query PostgreSQL database</li>
                     <li> Technologies used: Java OOP/Networks, JDBC, PostgreSQL</li>

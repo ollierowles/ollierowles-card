@@ -2,7 +2,7 @@
   "name": "ollierowles-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ollierowles.github.io/ollierowles-portfolio",
+  "homepage": "https://ollierowles.com",
   "dependencies": {
     "-": "^0.0.1",
     "@fortawesome/free-brands-svg-icons": "^6.2.0",

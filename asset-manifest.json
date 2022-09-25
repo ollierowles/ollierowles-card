@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/ollierowles-portfolio/static/js/main.39c27b0d.js",
-    "static/media/profile-photo.png": "/ollierowles-portfolio/static/media/profile-photo.509fa3329832bf2f38f3.png",
-    "index.html": "/ollierowles-portfolio/index.html",
-    "main.39c27b0d.js.map": "/ollierowles-portfolio/static/js/main.39c27b0d.js.map"
+    "main.js": "/static/js/main.3bdde6b0.js",
+    "static/media/profile-photo.png": "/static/media/profile-photo.509fa3329832bf2f38f3.png",
+    "index.html": "/index.html",
+    "main.3bdde6b0.js.map": "/static/js/main.3bdde6b0.js.map"
   },
   "entrypoints": [
-    "static/js/main.39c27b0d.js"
+    "static/js/main.3bdde6b0.js"
   ]
 }

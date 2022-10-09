@@ -8,6 +8,8 @@ import {faGithub} from '@fortawesome/free-brands-svg-icons'
 import {faFile} from '@fortawesome/free-solid-svg-icons'
 import {faBarsProgress} from '@fortawesome/free-solid-svg-icons'
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
+
+import CV from './Ollie-Rowles-CV.pdf'
  
 
 export default function Card() {
@@ -26,7 +28,6 @@ export default function Card() {
                             <li className='card-list-item'> Software Engineer</li>
                             <li className='card-list-item'> Weightlifting, Guitar and Music</li>
                         </ul>
-                    
                     </div>
 
                     <div className='card-bio'>
@@ -43,7 +44,7 @@ export default function Card() {
                         <a href='https://github.com/ollierowles' target='_blank'><p className='link-bg'><FontAwesomeIcon icon={faGithub} className='icon-styles'/>GitHub</p></a>
                     </div>
                     <div className='card-links-bottom'>
-                        <a href='' target='_blank'><p className='link-bg'><FontAwesomeIcon icon={faFile} className='icon-styles'/>CV</p></a>
+                        <a href={CV} target='_tab'><p className='link-bg'><FontAwesomeIcon icon={faFile} className='icon-styles'/>CV</p></a>
                         <a href='#projects-anchor'><p className='link-bg'><FontAwesomeIcon icon={faBarsProgress} className='icon-styles'/>Projects</p></a>
                         <a href='mailto: ollierowles@outlook.com' target='_blank'><p className='link-bg'><FontAwesomeIcon icon={faEnvelope} className='icon-styles'/>Contact</p></a>
                     </div>
